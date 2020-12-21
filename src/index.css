@@ -1,0 +1,34 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.button-section {
+  display: none;
+  position: relative;
+  top: -100px;
+  background-color: #fff0;
+}
+
+.content {
+  height: 100%;
+}
+
+.content .button-section {
+  display: none;
+}
+
+.content:hover .button-section {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -100px;
+  background-color: #fff;
+}

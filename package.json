@@ -19,16 +19,24 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "executableName": "Capture Card Viewer",
+        "icon": "./assets/icon.ico",
+        "platform": ["win32", "darwin", "linux"]
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "authors": "Alan Mar",
+            "authors": "DevWolf75",
             "copyright": "2020",
-            "exe": "Capture-Card-Viewer.exe",
+            "exe": "Capture Card Viewer.exe",
             "name": "CaptureCardViewer",
-            "icon": "./assets/icon.ico"
+            "title": "Capture Card Viewer",
+            "setupExe": "CaptureCardViewer",
+            "icon": "./assets/icon.ico",
+            "iconUrl": "https://raw.githubusercontent.com/devwolf75/capture-card-viewer/master/assets/icon.ico",
+            "setupIcon": "./assets/icon.ico"
           }
         },
         {

@@ -31,9 +31,7 @@
             "authors": "DevWolf75",
             "copyright": "2020",
             "exe": "Capture Card Viewer.exe",
-            "name": "CaptureCardViewer",
             "title": "Capture Card Viewer",
-            "setupExe": "CaptureCardViewer",
             "icon": "./assets/icon.ico",
             "iconUrl": "https://raw.githubusercontent.com/devwolf75/capture-card-viewer/master/assets/icon.ico",
             "setupIcon": "./assets/icon.ico"

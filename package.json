@@ -24,7 +24,11 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "capture_card_viewer"
+            "authors": "Alan Mar",
+            "copyright": "2020",
+            "exe": "Capture-Card-Viewer.exe",
+            "name": "CaptureCardViewer",
+            "icon": "./assets/icon.ico"
           }
         },
         {
@@ -34,12 +38,38 @@
           ]
         },
         {
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "format": "ULFO",
+            "icon": "./assets/icon.ico",
+            "name": "Capture Card Viewer"
+          }
+        },
+        {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "options": {
+              "maintainer": "Alan Mar",
+              "homepage": "https://github.com/devwolf75"
+            }
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "authToken": "%GITHUB_TOKEN_ELECTRON%",
+            "repository": {
+              "owner": "devwolf75",
+              "name": "capture-card-viewer"
+            },
+            "prerelease": true
+          }
         }
       ]
     }
@@ -50,6 +80,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
     "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.54",
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",

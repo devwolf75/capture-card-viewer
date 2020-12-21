@@ -3,6 +3,7 @@ body {
     Arial, sans-serif;
   padding: 0;
   margin: 0;
+  height: max-content;
 }
 
 video {
@@ -21,11 +22,11 @@ video {
   height: 100%;
 }
 
-.content .button-section {
+body .button-section {
   display: none;
 }
 
-.content:hover .button-section {
+body:hover .button-section {
   text-align: center;
   display: block;
   position: relative;

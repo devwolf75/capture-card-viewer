@@ -3,6 +3,7 @@ const { Menu } = remote;
 
 const videoElement = document.querySelector("video");
 const audioElement = document.querySelector("audio");
+const aspectRatioSelect = document.getElementById("aspectRatioSelect");
 const videoSelectBtn = document.getElementById("videoSelect");
 const audioSelectBtn = document.getElementById("audioSelect");
 
@@ -68,4 +69,14 @@ async function selectSource(source, sourceType) {
       audioElement.play();
     }
   } catch (e) {}
+}
+
+function changeAspectRatio(ratio) {
+  let selection =
+    aspectRatioSelect.options[aspectRatioSelect.selectedIndex].value;
+  let currentRatio = videoElement.videoWidth / videoElement.videoHeight;
+  let targetRatio = eval(selection.replace(":", "/"));
+  let adjustmentRatio = targetRatio / currentRatio;
+  videoElement.style.webkitTransform = `scaleX(${adjustmentRatio})`;
+  videoElement.style.transform = `scaleX(${adjustmentRatio})`;
 }

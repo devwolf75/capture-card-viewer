@@ -65,19 +65,7 @@
           "config": {}
         }
       ],
-      "publishers": [
-        {
-          "name": "@electron-forge/publisher-github",
-          "config": {
-            "authToken": "%GITHUB_TOKEN_ELECTRON%",
-            "repository": {
-              "owner": "devwolf75",
-              "name": "capture-card-viewer"
-            },
-            "prerelease": true
-          }
-        }
-      ]
+      "publishers": []
     }
   },
   "dependencies": {

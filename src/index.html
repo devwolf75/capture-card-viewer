@@ -31,6 +31,20 @@
       >
         Audio
       </button>
+      <select
+        id="aspectRatioSelect"
+        class="button is-text"
+        onchange="changeAspectRatio()"
+      >
+        <option value="null">Aspect Ratio</option>
+        <option value="1:1">1:1</option>
+        <option value="4:3">4:3</option>
+        <option value="16:9" selected>16:9</option>
+        <option value="16:10">16:10</option>
+        <option value="1.85:1">1.85:1</option>
+        <option value="2.35:1">2.35:1</option>
+        <option value="9:16">Vertical (9:16)</option>
+      </select>
     </div>
   </body>
 </html>
